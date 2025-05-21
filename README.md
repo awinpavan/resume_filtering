@@ -1,22 +1,22 @@
-﻿# 🧠 Resume Filtering with LLM-based Scoring
+# Resume Filtering with LLM-based Scoring
 This project automates the resume screening process using Large Language Models (LLMs) via the Groq API. It helps recruiters and HR professionals streamline candidate evaluation by comparing resumes to a predefined job description, scoring them intelligently, and categorizing them into selected or rejected based on match relevance.
 
-# 📌 Features
-🔍 Automated Resume Parsing: Extracts text from PDF resumes using PyMuPDF.
+#  Features
+ Automated Resume Parsing: Extracts text from PDF resumes using PyMuPDF.
 
-🧼 Text Cleaning Pipeline: Cleans and normalizes resume content for uniformity and model readability.
+ Text Cleaning Pipeline: Cleans and normalizes resume content for uniformity and model readability.
 
-🤖 LLM-Powered Scoring Engine: Utilizes Groq’s LLM (DeepSeek LLaMA 70B Distill) to intelligently evaluate resumes against job descriptions.
+ LLM-Powered Scoring Engine: Utilizes Groq’s LLM (DeepSeek LLaMA 70B Distill) to intelligently evaluate resumes against job descriptions.
 
-📊 Vacancy-Aware Filtering: Automatically selects the top resumes based on the number of vacancies parsed from the job description.
+ Vacancy-Aware Filtering: Automatically selects the top resumes based on the number of vacancies parsed from the job description.
 
-📂 Folder Management: Copies PDF files of selected and rejected resumes into separate directories for further use.
+ Folder Management: Copies PDF files of selected and rejected resumes into separate directories for further use.
 
-🧹 Interactive Cleanup Tool: Option to delete files from key directories using a user-friendly terminal interface.
+ Interactive Cleanup Tool: Option to delete files from key directories using a user-friendly terminal interface.
 
-🔁 Orchestrated Workflow: flow.py handles all preprocessing and filtering steps in a sequential pipeline.
+ Orchestrated Workflow: flow.py handles all preprocessing and filtering steps in a sequential pipeline.
 
-# 🗂️ Project Structure
+#  Project Structure
 ├── src/
 
 │   ├── pdf_to_txt_PyMuPDF.py   # Extracts raw text from PDF resumes
@@ -43,7 +43,7 @@ This project automates the resume screening process using Large Language Models 
 
 │   └── job_description.txt     # Job description used for filtering
 
-# ⚙️ How It Works
+#  How It Works
 1) PDF Parsing: Resume PDFs from data/resumes/ are converted to .txt using PyMuPDF.
 
 2) Text Cleaning: The raw text is cleaned to remove noise, normalize formatting, and enhance LLM input quality.
@@ -63,7 +63,7 @@ groq
 
 PyMuPDF
 
-# 🧠 Powered By
+#  Powered By
 Groq - Ultra-fast inference of open-source LLMs
 
 DeepSeek LLaMA 70B Distill - Model used for resume evaluation
